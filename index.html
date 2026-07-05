@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Banana</title>
+    <title>Team Banana 선택기</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <style>
         /* 레트로 감성 폰트 및 전체 스타일 초기화 */
@@ -55,7 +55,7 @@
         }
 
         /* 팀원 카드 컨테이너 */
-        .team-container {
+        .select-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -66,7 +66,7 @@
         }
 
         /* 팀원 카드 스타일 */
-        .member-card {
+        .select-card {
             background: #ffffff;
             border: 3px solid #2c2c2c; /* 픽셀 느낌을 주는 두꺼운 아웃라인 */
             border-radius: 12px;
@@ -78,13 +78,13 @@
         }
 
         /* 카드 마우스 호버 효과 */
-        .member-card:hover {
+        .select-card:hover {
             transform: translate(-2px, -2px);
             box-shadow: 7px 7px 0px #f7b11d;
         }
 
         /* 카드 내 멤버 프로필 이미지 영역 */
-        .member-img {
+        .select-img {
             width: 90px;
             height: 90px;
             border-radius: 50%;
@@ -97,21 +97,21 @@
             font-size: 36px;
         }
 
-        .member-img img {
+        .select-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 50%;
         }
 
-        .member-name {
+        .select-name {
             font-size: 20px;
             font-weight: bold;
             margin: 0 0 5px 0;
             color: #2c2c2c;
         }
 
-        .member-role {
+        .select-role {
             font-size: 14px;
             color: #f7b11d;
             font-weight: 600;
@@ -119,7 +119,7 @@
             text-transform: uppercase;
         }
 
-        .member-desc {
+        .select-desc {
             font-size: 14px;
             line-height: 1.5;
             color: #555;
@@ -129,7 +129,7 @@
         }
 
         /* SNS / 개인 링크 버튼 */
-        .member-link {
+        .select-link {
             display: inline-block;
             padding: 8px 16px;
             background-color: #2c2c2c;
@@ -141,7 +141,7 @@
             transition: background-color 0.2s ease;
         }
 
-        .member-link:hover {
+        .select-link:hover {
             background-color: #f7b11d;
             color: #2c2c2c;
         }
@@ -157,31 +157,30 @@
         <p>하고 싶은 건 뭐든지 다 해보는 자유로운 팀입니다!</p>
     </header>
 
-    <div class="team-container">
+    <div class="select-container">
 
-        <div class="member-card">
-            <div class="member-img">🍌</div>
-            <div class="member-name">메인 화면</div>
-            <div class="member-role">Main Site</div>
-            <div class="member-desc">사이트의 메인 화면으로 이동합니다! 입에서 바나나가 사르르 녹아 내리는 것만큼 빠르게요</div>
-            <a href="https://team-banana.kro.kr/main" target="_blank" class="member-link">메인 화면으로 가기</a>
+        <div class="select-card">
+            <div class="select-img">🍌</div>
+            <div class="select-name">메인 화면</div>
+            <div class="select-role">Main Site</div>
+            <div class="select-desc">사이트의 메인 화면으로 이동합니다! 입에서 바나나가 사르르 녹아 내리는 것만큼 빠르게요</div>
+            <a href="https://team-banana.kro.kr/main" target="_blank" class="select-link">메인 화면으로 가기</a>
         </div>
 
-        <div class="member-card">
-            <div class="member-img">🗨️</div>
-            <div class="member-name">바나나 채팅</div>
-            <div class="member-role">Banana Chat</div>
-            <div class="member-desc">팀 바나나의 자유 채팅방입니다! 하지만 규칙도 있으니 주의하세요!</div>
-            <a href="https://chat.team-banana.kro.kr" target="_blank" class="member-link">채팅하러 가기</a>
-            <a href="https://chat.team-banana.kro.kr/rule" target="_blank" class="member-link">채팅 규칙</a>
+        <div class="select-card">
+            <div class="select-img">⭐</div>
+            <div class="select-name">Minecraft M.A.P.</div>
+            <div class="select-role">Mod/Addon/Plugin</div>
+            <div class="select-desc">팀 바나나의 마인크래프트 모드/애드온/플러그인을 보러 갑시다! 유용할 걸요?</div>
+            <a href="https://mc.team-banana.kro.kr" target="_blank" class="select-link">채팅하러 가기</a>
         </div>
 
-        <div class="member-card">
-            <div class="member-img">🎨</div>
-            <div class="member-name">공식 디스코드</div>
-            <div class="member-role">Official Discord</div>
-            <div class="member-desc">팀 바나나의 공식 디스코드 채널입니다! 만 14세 이상만 입장 가능합니다.. (바나나 채팅과도 연동됩니다)</div>
-            <a href="https://discord.team-banana.kro.kr" target="_blank" class="member-link">채널에 입장하기</a>
+        <div class="select-card">
+            <div class="select-img">🗨️</div>
+            <div class="select-name">공식 디스코드</div>
+            <div class="select-role">Official Discord</div>
+            <div class="select-desc">팀 바나나의 공식 디스코드 채널입니다!</div>
+            <a href="https://discord.team-banana.kro.kr" target="_blank" class="select-link">채널에 입장하기</a>     
         </div>
 
     </div>
